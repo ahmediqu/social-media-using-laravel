@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<!-- Mirrored from www.profiles.blue/register by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 17:54:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>
+    Blue - Be Social  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{url('frontend/assets/css/bootstrap.min.css')}}">
+   <!--Fav Icons      -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{url('frontend/assets/imgs/favicon/apple-icon-57x57.png')}}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{url('frontend/assets/imgs/favicon/apple-icon-60x60.png')}}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{url('frontend/assets/imgs/favicon/apple-icon-72x72.png')}}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{url('frontend/assets/imgs/favicon/apple-icon-76x76.png')}}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{url('frontend/assets/imgs/favicon/apple-icon-114x114.png')}}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{url('frontend/assets/imgs/favicon/apple-icon-120x120.png')}}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{url('frontend/assets/imgs/favicon/apple-icon-144x144.png')}}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{url('frontend/assets/imgs/favicon/apple-icon-152x152.png')}}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{url('frontend/assets/imgs/favicon/apple-icon-180x180.png')}}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{url('frontend/assets/imgs/favicon/android-icon-192x192.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{url('frontend/assets/imgs/favicon/favicon-32x32.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{url('frontend/assets/imgs/favicon/favicon-96x96.png')}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{url('frontend/assets/imgs/favicon/favicon-16x16.png')}}">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="{{url('frontend/assets/css/style.css')}}">  
+  
+        <style type="text/css" class="aInlineCss">
+        
+		 .bl {
+
+		 }
+		 .bl a {
+			display: inline;
+			margin: 0;
+			font-size: 16px;
+		 }
+		 .bl a:active,
+		 .bl a:hover,
+		 .bl a:focus {
+		 	text-decoration: none;
+		 }
+		    </style>
+
+</head>
+<body >
+	<div class="my-name create-account">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="login1">
+          <a href="login.html" class="account1">Have an account?</a>
+          <a href="login.html" class="log-in">LOG IN</a>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="assets/imgs/blue-logo.png" alt="logo"></a>
+        </div>
+        <div class="type-js headline">
+          <h1 class="text-js">Hello, lets get started on your profile.</h1>
+        </div>
+        <br />
+        <div id="show1">
+          <form>
+            <p class="p1">Enter your email address to create your account.</p>
+            <input type="text" name="name" placeholder="Full Name" id="fullname">
+            <input type="email" name="email" placeholder="Email" id="email1">
+            <input type="password" name="password" placeholder="Create a Password" id="pass">
+            <a href="add_profile_photo.html" class="btn w-100prc" id="submitBtn" title="">Create Account</a>
+            <p class="bl">
+              By signing up, you agree to our <a href="terms_and_conditions.html" class="forgot">Terms</a> and <a href="privacy_policy.html" class="forgot">Privacy Policy</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></body>
+<script src="{{url('frontend/assets/js/jquery-1.12.4.js')}}"></script>
+<script src="{{url('frontend/assets/js/bootstrap.min.js')}}"></script>
+<script src="{{url('frontend/assets/js/script.js')}}"></script>
+
+<!-- Load inline external files -->
+<script type="text/javascript" src="{{url('frontend/assets/js/jquery-ui.js')}}" class="aScriptFile"></script>
+<script type="text/javascript" src="{{url('frontend/assets/js/jquery.ui.touch-punch.js')}}" class="aScriptFile"></script>
+<script type="text/javascript" src="{{url('frontend/assets/js/auto-type.js')}}" class="aScriptFile"></script>
+<!-- Load inline external files; -->
+
+<!-- Load inline script -->
+<script type="text/javascript" class="aInlineScript">
+
+			$(document).ready(function() {
+			  setTimeout(function() {
+			    $("#txt1").addClass("hide1");
+			  }, 5000);
+			  setTimeout(function() {
+			    $("#show1").addClass("showtxt1");
+			  }, 3010);
+			  $(".add-tt li").on("click", function() {
+			    if (jQuery(this).hasClass("clicked")) {
+			      $(this).removeClass("clicked");
+			    } else {
+			      $(this).addClass("clicked");
+			    }
+			  });
+			});
+			var ph = "Email",
+			  searchBar = $("#email1"),
+			  // placeholder loop counter
+			  phCount = 0;
+			// function to return random number between
+			// with min/max range
+			function randDelay(min, max) {
+			  return Math.floor(Math.random() * (max - min + 1) + min);
+			}
+			// function to print placeholder text in a 
+			// "typing" effect
+			function printLetter(string, el) {
+			  // split string into character seperated array
+			  var arr = string.split(""),
+			    input = el,
+			    // store full placeholder
+			    origString = string,
+			    // get current placeholder value
+			    curPlace = $(input).attr("placeholder"),
+			    // append next letter to current placeholder
+			    placeholder = curPlace + arr[phCount];
+			  setTimeout(function() {
+			    // print placeholder text
+			    $(input).attr("placeholder", placeholder);
+			    // increase loop count
+			    phCount++;
+			    // run loop until placeholder is fully printed
+			    if (phCount < arr.length) {
+			      printLetter(origString, input);
+			    }
+			    // use random speed to simulate
+			    // "human" typing
+			  }, randDelay(50, 500));
+			}
+			// function to init animation
+			function placeholder() {
+			  $(searchBar).attr("placeholder", "");
+			  printLetter(ph, searchBar);
+			}
+			placeholder();
+			$(".submit").click(function(e) {
+			  phCount = 0;
+			  e.preventDefault();
+			  placeholder();
+			});
+			var ph1 = "Create a Password",
+			  searchBar1 = $("#pass"),
+			  // placeholder loop counter
+			  phCount1 = 0;
+			// function to return random number between
+			// with min/max range
+			function randDelay1(min, max) {
+			  return Math.floor(Math.random() * (max - min + 1) + min);
+			}
+			// function to print placeholder text in a 
+			// "typing" effect
+			function printLetter1(string, el) {
+			  // split string into character seperated array
+			  var arr = string.split(""),
+			    input = el,
+			    // store full placeholder
+			    origString = string,
+			    // get current placeholder value
+			    curPlace = $(input).attr("placeholder"),
+			    // append next letter to current placeholder
+			    placeholder = curPlace + arr[phCount1];
+			  setTimeout(function() {
+			    // print placeholder text
+			    $(input).attr("placeholder", placeholder);
+			    // increase loop count
+			    phCount1++;
+			    // run loop until placeholder is fully printed
+			    if (phCount1 < arr.length) {
+			      printLetter1(origString, input);
+			    }
+			    // use random speed to simulate
+			    // "human" typing
+			  }, randDelay1(50, 500));
+			}
+			// function to init animation
+			function placeholder1() {
+			  $(searchBar1).attr("placeholder", "");
+			  printLetter1(ph1, searchBar1);
+			}
+			placeholder1();
+			$(".submit").click(function(e) {
+			  phCount1 = 0;
+			  e.preventDefault();
+			  placeholder();
+			});
+			$(document).on("submit", "form", function(){
+				var self = $(this);
+				var submitBtn = $("#submitBtn");
+				var oJson 	= $(this).serializeArray();
+				submitBtn.addClass("disabled").attr("disabled", true);
+				$.ajax({
+	        url: "api/register",
+	        type: "POST",
+	        data: oJson,
+	        dataType: "json",
+	        success: function(r){
+						submitBtn.removeClass("disabled").removeAttr("disabled");
+	        	if(r.success){
+	      			window.location = "login.html";
+	        	}else{
+	        		alert(r.msg);
+	        	}
+	        }
+	      });
+	      return false;
+			});
+		
+      var httpAssets = "assets/index.html"; 
+     
+</script>
+<!-- Load inline script; -->
+
+</body>
+
+<!-- Mirrored from www.profiles.blue/register by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 17:54:53 GMT -->
+</html>
